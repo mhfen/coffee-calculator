@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html lang="en" class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Coffee Calculator</title>
+  <meta name="description" content="A simple web app to calculate a good cup of coffee.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/coffee-app.css"/>
+
+  <!--[if lt IE 9]>
+  <script src="/js/vendor/html5shiv.min.js"></script>
+  <![endif]-->
+</head>
+<body ng-app="coffeeApp" ng-controller="coffeeController">
+
+  <div class="container">
+
+    <header id="header">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Coffee Calculator</h1>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="row">
+        <div class="col-md-12">
+          <form>
+            <fieldset>
+              <label for="cups">Desired Cups of Coffee</label>
+              <input id="cups" name="cups" type="number" placeholder="Desired cups of coffee"/>
+            </fieldset>
+            <fieldset>
+              <input class="btn btn-primary" type="submit" value="Calculate">
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer">
+
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="/js/vendor/cookies.js"></script>
+  <script src="/js/vendor/angular.min.js"></script>
+  <script src="/js/vendor/angular-route.min.js"></script>
+  <script src="/js/coffee-app.js"></script>
+</body>
+</html>
