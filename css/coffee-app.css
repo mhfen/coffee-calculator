@@ -1,3 +1,6 @@
+/* ---------------------------------------------------------------------
+ Utility Mixins
+------------------------------------------------------------------------ */
 /*!
  * Bootstrap v3.2.0 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
@@ -3260,4 +3263,82 @@ input[type="button"].btn-block {
   .hidden-print {
     display: none !important;
   }
+}
+/* ---------------------------------------------------------------------
+ Header
+------------------------------------------------------------------------ */
+.header {
+  margin: 20px 0;
+}
+
+.header h1 {
+  font-size: 22px;
+  font-size: 2.2rem;
+}
+
+/* ---------------------------------------------------------------------
+ Main
+------------------------------------------------------------------------ */
+.main {
+  margin: 20px 0;
+}
+
+/* ---------------------------------------------------------------------
+ Footer (Sticky)
+------------------------------------------------------------------------ */
+html,
+body {
+  height: 100%;
+}
+
+.site {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.site-bd {
+  display: table-row;
+  height: auto;
+}
+
+.site-ft {
+  display: table-row;
+  height: 1px;
+}
+
+.footer {
+  margin: 20px 0;
+}
+
+/* ---------------------------------------------------------------------
+H List
+------------------------------------------------------------------------ */
+.hList {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.hList > * {
+  float: left;
+}
+
+.hList_tight > * + * {
+  margin-left: 8px;
+}
+
+.hList_std > * + * {
+  margin-left: 16px;
+}
+
+.hList_loose > * + * {
+  margin-left: 24px;
+}
+
+.hList_divided > * + * {
+  margin-left: 12px;
+  padding-left: 12px;
+  border-left: 1px solid;
 }
