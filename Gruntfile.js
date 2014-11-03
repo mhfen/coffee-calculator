@@ -7,7 +7,7 @@ module.exports = function (grunt) {
     // Sets main project directories
     config: {
       src: 'src/assets/',
-      dist: 'web/'
+      dist: '.'
     },
 
     // Watches files for changes and runs tasks based on the changed files
