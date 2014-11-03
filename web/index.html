@@ -13,7 +13,7 @@
   <script src="/js/vendor/html5shiv.min.js"></script>
   <![endif]-->
 </head>
-<body ng-app="coffeeApp" ng-controller="coffeeController">
+<body ng-app="coffeeApp" ng-controller="mainController">
 
   <div class="container">
 
@@ -28,15 +28,9 @@
     <main id="main">
       <div class="row">
         <div class="col-md-12">
-          <form>
-            <fieldset>
-              <label for="cups">Desired Cups of Coffee</label>
-              <input id="cups" name="cups" type="number" placeholder="Desired cups of coffee"/>
-            </fieldset>
-            <fieldset>
-              <input class="btn btn-primary" type="submit" value="Calculate">
-            </fieldset>
-          </form>
+
+          <div ng-view></div>
+
         </div>
       </div>
     </main>
