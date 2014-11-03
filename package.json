@@ -1,0 +1,16 @@
+{
+  "name": "coffee-calculator",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mhfen/coffee-calculator"
+  },
+  "description": "A simple web app to calculate a good cup of coffee",
+  "devDependencies": {
+    "compass": "^0.1.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^0.9.0",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
