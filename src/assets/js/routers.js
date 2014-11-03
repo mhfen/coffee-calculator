@@ -5,11 +5,11 @@
 	.config(function($routeProvider) {
         $routeProvider
             .when('/', {
-                templateUrl : '/pages/home.html',
+                templateUrl : 'pages/home.html',
                 controller  : 'mainController'
             })
             .when('/results/:cups', {
-                templateUrl : '/pages/results.html',
+                templateUrl : 'pages/results.html',
                 controller  : 'resultsController'
             });
     });
