@@ -6,44 +6,59 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Coffee Calculator</title>
   <meta name="description" content="A simple web app to calculate a good cup of coffee.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <link rel="stylesheet" href="css/coffee-app.css"/>
-
-  <!--[if lt IE 9]>
-  <script src="/js/vendor/html5shiv.min.js"></script>
-  <![endif]-->
 </head>
 <body ng-app="coffeeApp" ng-controller="mainController">
 
-  <div class="container">
+  <div class="site">
 
-    <header id="header">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>Coffee Calculator</h1>
+    <div class="site-bd">
+      <div id="header" class="header" role="banner">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Coffee Calculator</h1>
+            </div>
+          </div>
         </div>
       </div>
-    </header>
+      <!-- // END header -->
 
-    <main id="main">
-      <div class="row">
-        <div class="col-md-12">
+      <div id="main" class="main" role="main">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
 
-          <div ng-view></div>
+              <div ng-view></div>
 
+            </div>
+          </div>
         </div>
       </div>
-    </main>
+      <!-- // END main -->
+    </div>
+    <!-- // END site-bd -->
 
-    <footer id="footer">
-      <div class="row">
-        <div class="col-md-12">
-          <p>Coffee golden ratio: <a href="http://www.theatlantic.com/health/archive/2013/08/how-to-make-perfect-coffee/278944/">http://www.theatlantic.com/health/archive/2013/08/how-to-make-perfect-coffee/278944/</a></p>
+    <div class="site-ft">
+      <div id="footer" class="footer" role="navigation">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="hList hList_divided">
+                <li><a href="//www.fender.me">fender.me</a></li>
+                <li><a href="http://www.theatlantic.com/health/archive/2013/08/how-to-make-perfect-coffee/278944/" target="_blank">Coffee golden ratio</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+      <!-- // END footer -->
+    </div>
+    <!-- // END site-ft -->
 
   </div>
+  <!-- // END site -->
 
   <!-- Scripts -->
   <script src="js/vendor/cookies.js"></script>

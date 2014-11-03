@@ -1,4 +1,18 @@
-// convert pixels to ems
-@function em($pixels, $context: $font-size-base-value) {
-  @return #{$pixels/$context}em
+/* ---------------------------------------------------------------------
+ Utility Mixins
+------------------------------------------------------------------------ */
+
+// Clearfix
+@mixin clearfix() {
+    &:after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+}
+
+// rem Fallback
+@mixin font-size($sizeValue) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
 }
