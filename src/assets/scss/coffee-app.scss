@@ -5,8 +5,11 @@
 // Base styles
 @import "base/bootstrap";
 
-// App styles
+// Landmarks
 @import "landmarks/header";
 @import "landmarks/main";
 @import "landmarks/footer";
-@import "modules/hList";
+
+// Modules
+@import "modules/lists/hList";
+@import "modules/coffeeCup/coffeeCup";
