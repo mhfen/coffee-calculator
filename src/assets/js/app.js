@@ -11,6 +11,12 @@ coffeeApp.utils = {
 		return waterInOunces;
 	},
 
+	calculateLiters : function (cups) {
+		var waterInLiters = Number(cups)*0.236588;
+
+		return waterInLiters.toFixed(2);
+	},
+
 	calculateCoffee : function (waterVolume) {
 		var goldenRatio = 17.42,
 			coffeeInOunces = Number(waterVolume)/goldenRatio;
@@ -18,10 +24,10 @@ coffeeApp.utils = {
 		return coffeeInOunces.toFixed(2);
 	},
 
-	calculateTeaspoon : function (coffeeInOunces) {
-		var coffeeInTeaspoons = Number(coffeeInOunces)*6;
+	calculateTablespoon : function (coffeeInOunces) {
+		var coffeeInTablespoons = Number(coffeeInOunces)*2;
 
-		return coffeeInTeaspoons.toFixed(2);
+		return coffeeInTablespoons.toFixed(2);
 	}
 };
 

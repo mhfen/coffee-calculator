@@ -14,6 +14,7 @@ angular.module('coffeeApp.controllers', [])
 		$scope.utils = coffeeApp.utils;
 		$scope.cups = $routeParams.cups;
 		$scope.waterVolume = $scope.utils.calculateWater($routeParams.cups);
+		$scope.waterVolumeLiters = $scope.utils.calculateLiters($routeParams.cups);
 		$scope.coffeeVolume = $scope.utils.calculateCoffee($scope.waterVolume);
-		$scope.coffeeTeaspoons = $scope.utils.calculateTeaspoon($scope.coffeeVolume);
+		$scope.coffeeTablespoons = $scope.utils.calculateTablespoon($scope.coffeeVolume);
     });
