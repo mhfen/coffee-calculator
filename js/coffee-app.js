@@ -1,4 +1,4 @@
-/*! Calculator App Build - 2014-11-02 */
+/*! Calculator App Build - 2015-03-03 */
 
 // Coffee App
 // -----------------------
@@ -13,6 +13,12 @@ coffeeApp.utils = {
 		return waterInOunces;
 	},
 
+	calculateLiters : function (cups) {
+		var waterInLiters = Number(cups)*0.236588;
+
+		return waterInLiters.toFixed(2);
+	},
+
 	calculateCoffee : function (waterVolume) {
 		var goldenRatio = 17.42,
 			coffeeInOunces = Number(waterVolume)/goldenRatio;
@@ -20,10 +26,10 @@ coffeeApp.utils = {
 		return coffeeInOunces.toFixed(2);
 	},
 
-	calculateTeaspoon : function (coffeeInOunces) {
-		var coffeeInTeaspoons = Number(coffeeInOunces)*6;
+	calculateTablespoon : function (coffeeInOunces) {
+		var coffeeInTablespoons = Number(coffeeInOunces)*2;
 
-		return coffeeInTeaspoons.toFixed(2);
+		return coffeeInTablespoons.toFixed(2);
 	}
 };
 
@@ -52,8 +58,9 @@ angular.module('coffeeApp.controllers', [])
 		$scope.utils = coffeeApp.utils;
 		$scope.cups = $routeParams.cups;
 		$scope.waterVolume = $scope.utils.calculateWater($routeParams.cups);
+		$scope.waterVolumeLiters = $scope.utils.calculateLiters($routeParams.cups);
 		$scope.coffeeVolume = $scope.utils.calculateCoffee($scope.waterVolume);
-		$scope.coffeeTeaspoons = $scope.utils.calculateTeaspoon($scope.coffeeVolume);
+		$scope.coffeeTablespoons = $scope.utils.calculateTablespoon($scope.coffeeVolume);
     });
 
 
