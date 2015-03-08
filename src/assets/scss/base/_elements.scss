@@ -1,0 +1,23 @@
+/* ---------------------------------------------------------------------
+ Elements Styles
+------------------------------------------------------------------------ */
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    @include boxSizing(border-box);
+    font-size: 10px;
+}
+
+html * {
+    @include boxSizing(border-box);
+}
+
+body {
+    font-family: $DEFAULT_FONT;
+    @include rem(1.6);
+    background: $COLOR_THEME_LIGHT;
+}

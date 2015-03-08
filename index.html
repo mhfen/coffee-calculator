@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!--[if IE 8]>         <html lang="en" class="lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,25 +9,25 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/coffee-app.css"/>
+  <link rel="stylesheet" href="assets/styles/styles.css"/>
 
   <!-- Mobile and Favicons -->
-  <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" href="images/favicons/favicon-192x192.png" sizes="192x192">
-  <link rel="icon" type="image/png" href="images/favicons/favicon-160x160.png" sizes="160x160">
-  <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
-  <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/media/images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/media/images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/media/images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/media/images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/media/images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/media/images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/media/images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/media/images/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/media/images/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="assets/media/images/favicons/favicon-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="assets/media/images/favicons/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="assets/media/images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="assets/media/images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="assets/media/images/favicons/favicon-32x32.png" sizes="32x32">
   <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+  <meta name="msapplication-TileImage" content="assets/media/images/favicons/mstile-144x144.png">
 
 </head>
 <body ng-app="coffeeApp" ng-controller="mainController">
@@ -36,45 +35,24 @@
   <div class="site">
 
     <div class="site-bd">
-      <div id="header" class="header" role="banner">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12">
-              <h1>Coffee Calculator</h1>
-            </div>
-          </div>
-        </div>
-      </div>
+      <header id="header" class="header" role="banner">
+        <h1 class="hdg hdg_1">Coffee Calculator</h1>
+      </header>
       <!-- // END header -->
 
-      <div id="main" class="main" role="main">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12">
-
-              <div ng-view></div>
-
-            </div>
-          </div>
-        </div>
+      <div id="main" class="main" role="main" ng-view>
       </div>
       <!-- // END main -->
     </div>
     <!-- // END site-bd -->
 
     <div class="site-ft">
-      <div id="footer" class="footer" role="navigation">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12">
-              <ul class="hList hList_divided">
-                <li><a href="//www.fender.me">fender.me</a></li>
-                <li><a href="http://www.theatlantic.com/health/archive/2013/08/how-to-make-perfect-coffee/278944/" target="_blank">Coffee golden ratio</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      <footer id="footer" class="footer" role="navigation">
+        <ul class="hList hList_divided">
+          <li><a href="//www.fender.me">fender.me</a></li>
+          <li><a href="http://www.theatlantic.com/health/archive/2013/08/how-to-make-perfect-coffee/278944/" target="_blank">Coffee golden ratio</a></li>
+        </ul>
+      </footer>
       <!-- // END footer -->
     </div>
     <!-- // END site-ft -->
@@ -83,9 +61,8 @@
   <!-- // END site -->
 
   <!-- Scripts -->
-  <script src="js/vendor/cookies.js"></script>
-  <script src="js/vendor/angular.min.js"></script>
-  <script src="js/vendor/angular-route.min.js"></script>
-  <script src="js/coffee-app.js"></script>
+  <script src="assets/js/vendor/angular.min.js"></script>
+  <script src="assets/js/vendor/angular-route.min.js"></script>
+  <script src="assets/js/coffee-app.js"></script>
 </body>
 </html>

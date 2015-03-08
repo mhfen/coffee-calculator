@@ -6,39 +6,38 @@ module.exports = function (grunt) {
 
     // Sets main project directories
     config: {
-      src: 'src/assets/',
+      src: 'src/',
       dist: '.'
     },
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       compass: {
-        files: ['<%= config.src %>/scss/**/*.scss'],
+        files: ['<%= config.src %>/assets/scss/**/*.scss'],
         tasks: ['compass:dist']
       },
       concat: {
-        files: ['<%= config.src %>/js/*.js'],
+        files: ['<%= config.src %>/assets/js/*.js'],
         tasks: ['concat:dist']
+      },
+      copy: {
+        files: ['<%= config.src %>/assets/**'],
+        tasks: ['copy:assets']
       }
     },
 
     // Compiles SCSS to CSS and generates necessary files if requested
     compass: {
       options: {
-        sassDir: '<%= config.src %>/scss/',
-        cssDir: '<%= config.dist %>/css',
-        imagesDir: '<%= config.dist %>/images',
-        javascriptsDir: '<%= config.dist %>/js',
-        fontsDir: '<%= config.dist %>/fonts',
-        httpImagesPath: '<%= config.dist %>/img',
-        httpFontsPath: '<%= config.dist %>/fonts',
+        sassDir: '<%= config.src %>/assets/scss/',
+        cssDir: '<%= config.dist %>/assets/styles',
         assetCacheBuster: false,
         outputStyle: 'expanded',
         noLineComments: true
       },
       dist: {
         options: {
-          cssDir: '<%= config.dist %>/css'
+          cssDir: '<%= config.dist %>/assets/styles'
         }
       }
     },
@@ -51,8 +50,18 @@ module.exports = function (grunt) {
         separator: grunt.util.linefeed + grunt.util.linefeed
       },
       dist: {
-        src: ['<%= config.src %>/js/*.js'],
-        dest: '<%= config.dist %>/js/coffee-app.js',
+        src: ['<%= config.src %>/assets/js/*.js'],
+        dest: '<%= config.dist %>/assets/js/coffee-app.js',
+      }
+    },
+
+    copy: {
+      assets : {
+          expand: true,
+          cwd: '<%= config.src %>/assets',
+          src: ['media/**'],
+          dest: '<%= config.dist %>/assets',
+          filter: 'isFile'
       }
     }
 
@@ -60,12 +69,14 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task.
   grunt.registerTask('default', [
     'compass:dist',
-    'concat:dist'
+    'concat:dist',
+    'copy:assets'
   ]);
 
 };

@@ -1,0 +1,11 @@
+/* ---------------------------------------------------------------------
+FONTS
+------------------------------------------------------------------------ */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../media/fonts/Lato-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../media/fonts/Lato-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../media/fonts/Lato-Regular.ttf')  format('truetype') /* Safari, Android, iOS */
+}
