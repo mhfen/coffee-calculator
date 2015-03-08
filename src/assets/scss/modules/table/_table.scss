@@ -1,0 +1,63 @@
+/* ---------------------------------------------------------------------
+ Table
+------------------------------------------------------------------------ */
+.table {
+  width: 100%;
+  max-width: 100%;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 10px;
+  vertical-align: top;
+  border-top: 1px solid $COLOR_THEME_DARK_MED;
+}
+
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid $COLOR_THEME_DARK_MED;
+}
+
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
+.table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+
+.table > tbody + tbody {
+  border-top: 2px solid $COLOR_THEME_DARK_MED;
+}
+
+.table_condensed > thead > tr > th,
+.table_condensed > tbody > tr > th,
+.table_condensed > tfoot > tr > th,
+.table_condensed > thead > tr > td,
+.table_condensed > tbody > tr > td,
+.table_condensed > tfoot > tr > td {
+  padding: 5px;
+}
+
+.table_bordered {
+  border: 1px solid $COLOR_THEME_DARK_MED;
+}
+
+.table_bordered > thead > tr > th,
+.table_bordered > tbody > tr > th,
+.table_bordered > tfoot > tr > th,
+.table_bordered > thead > tr > td,
+.table_bordered > tbody > tr > td,
+.table_bordered > tfoot > tr > td {
+  border: 1px solid $COLOR_THEME_DARK_MED;
+}
+
+.table_bordered > thead > tr > th,
+.table_bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}

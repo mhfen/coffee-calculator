@@ -14,7 +14,7 @@ module.exports = function (grunt) {
     watch: {
       compass: {
         files: ['<%= config.src %>/assets/scss/**/*.scss'],
-        tasks: ['compass:dist']
+        tasks: ['compass:dev']
       },
       concat: {
         files: ['<%= config.src %>/assets/js/*.js'],
@@ -32,12 +32,16 @@ module.exports = function (grunt) {
         sassDir: '<%= config.src %>/assets/scss/',
         cssDir: '<%= config.dist %>/assets/styles',
         assetCacheBuster: false,
-        outputStyle: 'expanded',
-        noLineComments: true
+        noLineComments: true,
       },
-      dist: {
+      dev: {
         options: {
-          cssDir: '<%= config.dist %>/assets/styles'
+          outputStyle: 'expanded'
+        }
+      },
+      prod: {
+        options: {
+          outputStyle: 'compressed'
         }
       }
     },
@@ -74,7 +78,7 @@ module.exports = function (grunt) {
 
   // Default task.
   grunt.registerTask('default', [
-    'compass:dist',
+    'compass:dev',
     'concat:dist',
     'copy:assets'
   ]);

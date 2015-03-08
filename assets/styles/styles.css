@@ -148,6 +148,10 @@ a:hover {
   color: #CA902C;
 }
 
+p + p {
+  margin-top: 10px;
+}
+
 /* ---------------------------------------------------------------------
 FONTS
 ------------------------------------------------------------------------ */
@@ -188,6 +192,79 @@ FONTS
 /* ---------------------------------------------------------------------
  MODULES
 ------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------
+ Btn
+------------------------------------------------------------------------ */
+.btn {
+  display: inline-block;
+  margin: 0;
+  padding: 6px 12px;
+  border: 1px solid #4F2512;
+  border-radius: 4px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #904420;
+  background-image: none;
+  color: #F5ECC3;
+  white-space: nowrap;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+}
+
+.btn + .btn {
+  margin-left: 10px;
+}
+
+.btn:hover {
+  background-color: #4F2512;
+}
+
+.btn:visited {
+  color: #F5ECC3;
+}
+
+.btn:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.btn_small {
+  padding: 3px 6px;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+.btn_large {
+  padding: 12px 24px;
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+/* ---------------------------------------------------------------------
+ Grid
+------------------------------------------------------------------------ */
+.grid:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.grid-col + .grid-col {
+  margin-top: 20px;
+}
+
 /* ---------------------------------------------------------------------
  Heading
 ------------------------------------------------------------------------ */
@@ -267,6 +344,70 @@ FONTS
 }
 
 /* ---------------------------------------------------------------------
+ Table
+------------------------------------------------------------------------ */
+.table {
+  width: 100%;
+  max-width: 100%;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 10px;
+  vertical-align: top;
+  border-top: 1px solid #904420;
+}
+
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #904420;
+}
+
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
+.table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+
+.table > tbody + tbody {
+  border-top: 2px solid #904420;
+}
+
+.table_condensed > thead > tr > th,
+.table_condensed > tbody > tr > th,
+.table_condensed > tfoot > tr > th,
+.table_condensed > thead > tr > td,
+.table_condensed > tbody > tr > td,
+.table_condensed > tfoot > tr > td {
+  padding: 5px;
+}
+
+.table_bordered {
+  border: 1px solid #904420;
+}
+
+.table_bordered > thead > tr > th,
+.table_bordered > tbody > tr > th,
+.table_bordered > tfoot > tr > th,
+.table_bordered > thead > tr > td,
+.table_bordered > tbody > tr > td,
+.table_bordered > tfoot > tr > td {
+  border: 1px solid #904420;
+}
+
+.table_bordered > thead > tr > th,
+.table_bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+
+/* ---------------------------------------------------------------------
  Tier
 ------------------------------------------------------------------------ */
 .tier {
@@ -276,6 +417,21 @@ FONTS
 .tier_flush {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+}
+
+/* ---------------------------------------------------------------------
+ Vertical Rhythm Styles
+------------------------------------------------------------------------ */
+.vr {
+  margin-bottom: 10px;
+}
+
+.vr_x2 {
+  margin-bottom: 20px;
+}
+
+.vr_x3 {
+  margin-bottom: 30px;
 }
 
 /* ---------------------------------------------------------------------
@@ -307,6 +463,49 @@ FONTS
   /* ---------------------------------------------------------------------
    MODULES
   ------------------------------------------------------------------------ */
+  /* ---------------------------------------------------------------------
+   Grid
+  ------------------------------------------------------------------------ */
+  .grid {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .grid-col + .grid-col {
+    margin-top: 0;
+  }
+
+  .grid-col {
+    padding: 0 10px;
+    min-height: 1px;
+    float: left;
+    vertical-align: top;
+  }
+
+  .grid-col_1of6 {
+    width: 16.666666666667%;
+  }
+
+  .grid-col_2of6 {
+    width: 33.333333333333%;
+  }
+
+  .grid-col_3of6 {
+    width: 50%;
+  }
+
+  .grid-col_4of6 {
+    width: 66.666666666667%;
+  }
+
+  .grid-col_5of6 {
+    width: 83.333333333333%;
+  }
+
+  .grid-col_6of6 {
+    width: 100%;
+  }
+
   /* ---------------------------------------------------------------------
    Tier
   ------------------------------------------------------------------------ */

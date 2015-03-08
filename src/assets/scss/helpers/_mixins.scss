@@ -21,3 +21,15 @@
     -moz-box-sizing: $boxSizing;
     box-sizing: $boxSizing;
 }
+
+@mixin transform($property) {
+    -webkit-transform-style: $property;
+    -moz-transform-style: $property;
+    transform-style: $property;
+}
+
+@mixin transition($speed) {
+    -webkit-transition: $speed;
+    -moz-transition: $speed;
+    transition: $speed;
+}

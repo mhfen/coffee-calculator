@@ -1,0 +1,55 @@
+/* ---------------------------------------------------------------------
+ Btn
+------------------------------------------------------------------------ */
+.btn {
+    display: inline-block;
+    margin: 0;
+    padding: 6px 12px;
+    border: 1px solid $COLOR_THEME_DARK;
+    border-radius: 4px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: $COLOR_THEME_DARK_MED;
+    background-image: none;
+    color: $COLOR_THEME_LIGHT;
+    white-space: nowrap;
+    -ms-touch-action: manipulation;
+      touch-action: manipulation;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    @include transition(background-color 0.3s linear);
+}
+
+.btn + .btn {
+    margin-left: 10px;
+}
+
+.btn:hover {
+    background-color: $COLOR_THEME_DARK;
+}
+
+.btn:visited {
+    color: $COLOR_THEME_LIGHT;
+}
+
+.btn:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.btn_small {
+    padding: 3px 6px;
+    @include rem(1.2);
+}
+
+.btn_large {
+    padding: 12px 24px;
+    @include rem(2.0);
+}

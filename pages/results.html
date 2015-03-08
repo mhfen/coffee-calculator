@@ -1,49 +1,62 @@
 <div class="tier">
   <div class="wrapper">
-    <p>Use the following measures of ingredients to make {{ cups }} cups of coffee.</p>
-
-    <h2 class="h2">Ground Coffee Beans:</h2>
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Measurement Unit</th>
-                <th>Volume</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>US oz</td>
-                <td>{{ coffeeVolume }}</td>
-            </tr>
-            <tr>
-                <td>US tbsp.</td>
-                <td>{{ coffeeTablespoons }}</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2 class="h2">Water:</h2>
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Measurement Unit</th>
-                <th>Volume</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>US oz</td>
-                <td>{{ waterVolume }}</td>
-            </tr>
-            <tr>
-                <td>Liters</td>
-                <td>{{ waterVolumeLiters }}</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <div class="btn-set">
-    	<a class="btn btn-primary btn-sm" href="javascript:history.back()">Back</a>
+    <div class="vr vr_x2">
+      <p>Use the following measures of ingredients to make {{ cups }} cups of coffee.</p>
     </div>
-  </div>
-</div>
+    <div class="grid">
+      <div class="grid-col grid-col_3of6">
+        <div class="vr vr_x2">
+          <h2 class="hdg hdg_2">Ground Coffee Beans:</h2>
+        </div>
+        <table class="table table_bordered">
+          <thead>
+            <tr>
+              <th>Measurement Unit</th>
+              <th>Volume</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>US oz</td>
+              <td>{{ coffeeVolume }}</td>
+            </tr>
+            <tr>
+              <td>US tbsp.</td>
+              <td>{{ coffeeTablespoons }}</td>
+            </tr>
+          </tbody>
+        </table> <!-- end: table -->
+      </div>
+      <div class="grid-col grid-col_3of6">
+        <div class="vr vr_x2">
+          <h2 class="hdg hdg_2">Water:</h2>
+        </div>
+        <table class="table table_bordered">
+          <thead>
+            <tr>
+              <th>Measurement Unit</th>
+              <th>Volume</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>US oz</td>
+              <td>{{ waterVolume }}</td>
+            </tr>
+            <tr>
+              <td>Liters</td>
+              <td>{{ waterVolumeLiters }}</td>
+            </tr>
+          </tbody>
+        </table> <!-- end: table -->
+      </div>
+    </div> <!-- end: grid -->
+  </div> <!-- end: wrapper -->
+</div> <!-- end: tier -->
+<div class="tier">
+  <div class="wrapper">
+    <div class="btn-set">
+      <a class="btn" href="/">Back</a>
+    </div>
+  </div> <!-- end: wrapper -->
+</div> <!-- end: tier -->

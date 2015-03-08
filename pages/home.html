@@ -6,13 +6,14 @@
 <div class="tier">
   <div class="wrapper">
     <form id="form" name="form" class="ng-pristine ng-valid" novalidate autocomplete="off" >
-      <fieldset>
+      <fieldset class="vr vr_x2">
         <label for="cups">Desired Cups of Coffee</label>
-        <input id="cups" name="cups" ng-model="coffeeForm.cups" type="text" placeholder="Desired cups of coffee"/>
+        <input class="vr vr_x1" id="cups" name="cups" ng-model="coffeeForm.cups" type="text" placeholder="Desired cups of coffee"/>
         <p>(Assumption: 1 cup of coffee = 8 US oz)</p>
       </fieldset>
-      <fieldset>
-        <input ng-click="calculateCoffee(coffeeForm)" class="btn btn-primary" type="submit" value="Calculate">
+      <fieldset class="vr vr_x2">
+        <button class="btn btn_large" ng-click="calculateCoffee(coffeeForm)" data-multiplier="17.2">Pour Me Regular</button>
+        <button class="btn btn_large" ng-click="calculateCoffee(coffeeForm)" data-multiplier="15.2">Make It Strong</button>
       </fieldset>
     </form>
   </div>

@@ -28,3 +28,7 @@ a:visited,
 a:hover {
     color: $COLOR_THEME_MED;
 }
+
+p + p {
+    margin-top: 10px;
+}
