@@ -1,12 +1,20 @@
-<!-- Home View -->
-<form id="form" name="form" class="ng-pristine ng-valid" novalidate autocomplete="off" >
-  <fieldset>
-    <label for="cups">Desired Cups of Coffee</label>
-    <input id="cups" name="cups" ng-model="coffeeForm.cups" type="text" placeholder="Desired cups of coffee"/>
-    <p>(Assumption: 1 cup of coffee = 8 US oz)</p>
-  </fieldset>
-  <fieldset>
-    <input ng-click="calculateCoffee(coffeeForm)" class="btn btn-primary" type="submit" value="Calculate">
-  </fieldset>
-</form>
-<!-- / Home View -->
+<div class="tier">
+  <div class="wrapper">
+    <h2 class="hdg hdg_2">Let's brew!</h2>
+  </div>
+</div>
+<div class="tier">
+  <div class="wrapper">
+    <form id="form" name="form" class="ng-pristine ng-valid" novalidate autocomplete="off" >
+      <fieldset>
+        <label for="cups">Desired Cups of Coffee</label>
+        <input id="cups" name="cups" ng-model="coffeeForm.cups" type="text" placeholder="Desired cups of coffee"/>
+        <p>(Assumption: 1 cup of coffee = 8 US oz)</p>
+      </fieldset>
+      <fieldset>
+        <input ng-click="calculateCoffee(coffeeForm)" class="btn btn-primary" type="submit" value="Calculate">
+      </fieldset>
+    </form>
+  </div>
+</div>
+

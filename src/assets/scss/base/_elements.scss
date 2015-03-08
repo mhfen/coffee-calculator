@@ -20,4 +20,11 @@ body {
     font-family: $DEFAULT_FONT;
     @include rem(1.6);
     background: $COLOR_THEME_LIGHT;
+    color: $COLOR_THEME_DARK;
+}
+
+a,
+a:visited,
+a:hover {
+    color: $COLOR_THEME_MED;
 }

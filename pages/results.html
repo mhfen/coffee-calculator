@@ -1,47 +1,49 @@
-<!-- Results View -->
-<p>Use the following measures of ingredients to make {{ cups }} cups of coffee.</p>
+<div class="tier">
+  <div class="wrapper">
+    <p>Use the following measures of ingredients to make {{ cups }} cups of coffee.</p>
 
-<h2 class="h2">Ground Coffee Beans:</h2>
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>Measurement Unit</th>
-            <th>Volume</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>US oz</td>
-            <td>{{ coffeeVolume }}</td>
-        </tr>
-        <tr>
-            <td>US tbsp.</td>
-            <td>{{ coffeeTablespoons }}</td>
-        </tr>
-    </tbody>
-</table>
+    <h2 class="h2">Ground Coffee Beans:</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Measurement Unit</th>
+                <th>Volume</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>US oz</td>
+                <td>{{ coffeeVolume }}</td>
+            </tr>
+            <tr>
+                <td>US tbsp.</td>
+                <td>{{ coffeeTablespoons }}</td>
+            </tr>
+        </tbody>
+    </table>
 
-<h2 class="h2">Water:</h2>
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>Measurement Unit</th>
-            <th>Volume</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>US oz</td>
-            <td>{{ waterVolume }}</td>
-        </tr>
-        <tr>
-            <td>Liters</td>
-            <td>{{ waterVolumeLiters }}</td>
-        </tr>
-    </tbody>
-</table>
+    <h2 class="h2">Water:</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Measurement Unit</th>
+                <th>Volume</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>US oz</td>
+                <td>{{ waterVolume }}</td>
+            </tr>
+            <tr>
+                <td>Liters</td>
+                <td>{{ waterVolumeLiters }}</td>
+            </tr>
+        </tbody>
+    </table>
 
-<div class="btn-set">
-	<a class="btn btn-primary btn-sm" href="javascript:history.back()">Back</a>
+    <div class="btn-set">
+    	<a class="btn btn-primary btn-sm" href="javascript:history.back()">Back</a>
+    </div>
+  </div>
 </div>
-<!-- / Results View -->

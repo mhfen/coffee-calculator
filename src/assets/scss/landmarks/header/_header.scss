@@ -1,8 +1,8 @@
 /* ---------------------------------------------------------------------
- Main
+ Header
 ------------------------------------------------------------------------ */
-
-.main {
-    margin: 20px 0;
+.header {
+    padding: 20px 0;
+    background: $COLOR_THEME_DARK_MED;
+    color: $COLOR_THEME_LIGHT;
 }
-

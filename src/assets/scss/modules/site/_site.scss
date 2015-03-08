@@ -1,12 +1,6 @@
 /* ---------------------------------------------------------------------
- Footer (Sticky)
+ Site (sticky footer)
 ------------------------------------------------------------------------ */
-
-html,
-body {
-    height: 100%;
-}
-
 .site {
     display: table;
     height: 100%;
@@ -21,8 +15,4 @@ body {
 .site-ft {
     display: table-row;
     height: 1px;
-}
-
-.footer {
-	margin: 20px 0;
 }
