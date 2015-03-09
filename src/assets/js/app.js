@@ -17,9 +17,9 @@ coffeeApp.utils = {
 		return waterInLiters.toFixed(2);
 	},
 
-	calculateCoffee : function (waterVolume) {
-		var goldenRatio = 17.42,
-			coffeeInOunces = Number(waterVolume)/goldenRatio;
+	calculateCoffee : function (waterVolume, ratio) {
+		var goldenRatio = ratio;
+		var coffeeInOunces = Number(waterVolume)/goldenRatio;
 
 		return coffeeInOunces.toFixed(2);
 	},
@@ -35,6 +35,7 @@ coffeeApp.utils = {
 angular.module('coffeeApp', [
 	'ngRoute',
 	'coffeeApp.routers',
-	'coffeeApp.controllers'
+	'coffeeApp.controllers',
+	'coffeeApp.services'
 ]);
 
