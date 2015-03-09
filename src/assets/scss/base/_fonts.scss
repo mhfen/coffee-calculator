@@ -9,3 +9,7 @@ FONTS
        url('../media/fonts/Lato-Regular.woff') format('woff'), /* Pretty Modern Browsers */
        url('../media/fonts/Lato-Regular.ttf')  format('truetype') /* Safari, Android, iOS */
 }
+
+.mainFontFamily {
+    font-family: $DEFAULT_FONT;
+}

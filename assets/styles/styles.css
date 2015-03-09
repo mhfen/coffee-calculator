@@ -125,6 +125,7 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: Arial, "Helvetica", sans-serif;
   font-size: 10px;
 }
 
@@ -135,7 +136,6 @@ html * {
 }
 
 body {
-  font-family: "Lato", Arial, sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   background: #F5ECC3;
@@ -161,6 +161,10 @@ FONTS
   font-weight: 400;
   src: url("../media/fonts/Lato-Regular.woff2") format("woff2"), url("../media/fonts/Lato-Regular.woff") format("woff"), url("../media/fonts/Lato-Regular.ttf") format("truetype");
 }
+.mainFontFamily {
+  font-family: "Lato", Arial, sans-serif;
+}
+
 /* ---------------------------------------------------------------------
  LANDMARKS
 ------------------------------------------------------------------------ */
@@ -250,6 +254,54 @@ FONTS
   padding: 12px 24px;
   font-size: 20px;
   font-size: 2rem;
+}
+
+/* ---------------------------------------------------------------------
+ Field
+------------------------------------------------------------------------ */
+.field-field {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #904420;
+}
+
+.field-field_large {
+  padding: 15px;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.field-field_solo {
+  display: block;
+}
+
+.field-field + .field-field {
+  margin-left: 10px;
+}
+
+.field-label {
+  display: inline-block;
+  color: #904420;
+}
+
+.field-label_large {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.field-legend {
+  display: block;
+  color: #904420;
+}
+
+.field-legend_large {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.field-info {
+  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 /* ---------------------------------------------------------------------
