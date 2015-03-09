@@ -1,0 +1,18 @@
+/* ---------------------------------------------------------------------
+ Site (sticky footer)
+------------------------------------------------------------------------ */
+.site {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.site-bd {
+    display: table-row;
+    height: auto;
+}
+
+.site-ft {
+    display: table-row;
+    height: 1px;
+}

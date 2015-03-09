@@ -1,0 +1,25 @@
+/* ---------------------------------------------------------------------
+ Grid
+------------------------------------------------------------------------ */
+.grid {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.grid-col + .grid-col {
+    margin-top: 0;
+}
+
+.grid-col {
+    padding: 0 10px;
+    min-height: 1px;
+    float: left;
+    vertical-align: top;
+}
+
+.grid-col_1of6 { width: 16.666666666667%; }
+.grid-col_2of6 { width: 33.333333333333%; }
+.grid-col_3of6 { width: 50%; }
+.grid-col_4of6 { width: 66.666666666667%; }
+.grid-col_5of6 { width: 83.333333333333%; }
+.grid-col_6of6 { width: 100%; }

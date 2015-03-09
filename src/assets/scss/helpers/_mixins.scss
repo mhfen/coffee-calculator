@@ -1,6 +1,5 @@
-/* ---------------------------------------------------------------------
- Utility Mixins
------------------------------------------------------------------------- */
+// MIXINS
+// =======================
 
 // Clearfix
 @mixin clearfix() {
@@ -12,7 +11,25 @@
 }
 
 // rem Fallback
-@mixin font-size($sizeValue) {
+@mixin rem($sizeValue) {
   font-size: ($sizeValue * 10) + px;
   font-size: $sizeValue + rem;
+}
+
+@mixin boxSizing($boxSizing) {
+    -webkit-box-sizing: $boxSizing;
+    -moz-box-sizing: $boxSizing;
+    box-sizing: $boxSizing;
+}
+
+@mixin transform($property) {
+    -webkit-transform-style: $property;
+    -moz-transform-style: $property;
+    transform-style: $property;
+}
+
+@mixin transition($speed) {
+    -webkit-transition: $speed;
+    -moz-transition: $speed;
+    transition: $speed;
 }

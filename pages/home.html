@@ -1,12 +1,25 @@
-<!-- Home View -->
-<form id="form" name="form" class="ng-pristine ng-valid" novalidate autocomplete="off" >
-  <fieldset>
-    <label for="cups">Desired Cups of Coffee</label>
-    <input id="cups" name="cups" ng-model="coffeeForm.cups" type="text" placeholder="Desired cups of coffee"/>
-    <p>(Assumption: 1 cup of coffee = 8 US oz)</p>
-  </fieldset>
-  <fieldset>
-    <input ng-click="calculateCoffee(coffeeForm)" class="btn btn-primary" type="submit" value="Calculate">
-  </fieldset>
-</form>
-<!-- / Home View -->
+<div class="tier">
+  <div class="wrapper">
+    <h2 class="hdg hdg_2">Let's brew!</h2>
+  </div>
+</div>
+<div class="tier">
+  <div class="wrapper">
+    <form id="form" name="form" class="ng-pristine ng-valid" ng-submit="calculateCoffee(coffeeForm)" novalidate autocomplete="off" >
+      <fieldset class="field vr vr_x2">
+        <label class="field-label field-label_large vr vr_x1" for="cups">Cups of Coffee:</label>
+        <input class="field-field field-field_large field-field_solo vr vr_x1" name="cups" ng-model="coffeeForm.cups" required type="text" placeholder="2 or 4 or 6..."/>
+        <p class="field-info">(Assumption: 1 cup of coffee = 8 US oz)</p>
+      </fieldset>
+      <fieldset class="field vr vr_x2">
+        <legend class="field-legend field-legend_large vr vr_x1" for="strength">Make it...</legend>
+        <input type="radio" name="strength" ng-model="coffeeForm.strength" required value="17.42" /><span class="field-label">Regular</span><br>
+        <input type="radio" name="strength" ng-model="coffeeForm.strength" required value="14.42" /><span class="field-label">Strong</span>
+      </fieldset>
+      <fieldset class="field vr vr_x2">
+        <button class="btn btn_large" ng-click="calculateCoffee(coffeeForm)">Calculate</button>
+      </fieldset>
+    </form>
+  </div>
+</div>
+

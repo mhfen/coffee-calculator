@@ -1,0 +1,567 @@
+/* ---------------------------------------------------------------------
+ BASE STYLES
+------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------
+RESET CSS (by Eric Meyer)
+------------------------------------------------------------------------ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* ---------------------------------------------------------------------
+ HTML5 Element Reset
+------------------------------------------------------------------------ */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+audio, canvas, video, progress, picture {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+/* ---------------------------------------------------------------------
+ Form Reset Styles
+------------------------------------------------------------------------ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* ---------------------------------------------------------------------
+ Elements Styles
+------------------------------------------------------------------------ */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Arial, "Helvetica", sans-serif;
+  font-size: 10px;
+}
+
+html * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-size: 1.6rem;
+  background: #F5ECC3;
+  color: #4F2512;
+}
+
+a,
+a:visited,
+a:hover {
+  color: #CA902C;
+}
+
+p + p {
+  margin-top: 10px;
+}
+
+/* ---------------------------------------------------------------------
+FONTS
+------------------------------------------------------------------------ */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../media/fonts/Lato-Regular.woff2") format("woff2"), url("../media/fonts/Lato-Regular.woff") format("woff"), url("../media/fonts/Lato-Regular.ttf") format("truetype");
+}
+.mainFontFamily {
+  font-family: "Lato", Arial, sans-serif;
+}
+
+/* ---------------------------------------------------------------------
+ LANDMARKS
+------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------
+ Footer
+------------------------------------------------------------------------ */
+.footer {
+  padding: 20px 0;
+  background: #4F2512;
+  color: #F5ECC3;
+}
+
+/* ---------------------------------------------------------------------
+ Header
+------------------------------------------------------------------------ */
+.header {
+  padding: 20px 0;
+  background: #904420;
+  color: #F5ECC3;
+}
+
+/* ---------------------------------------------------------------------
+ Main
+------------------------------------------------------------------------ */
+.main {
+  padding: 20px 0;
+}
+
+/* ---------------------------------------------------------------------
+ MODULES
+------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------
+ Btn
+------------------------------------------------------------------------ */
+.btn {
+  display: inline-block;
+  margin: 0;
+  padding: 6px 12px;
+  border: 1px solid #4F2512;
+  border-radius: 4px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #904420;
+  background-image: none;
+  color: #F5ECC3;
+  white-space: nowrap;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+}
+
+.btn + .btn {
+  margin-left: 10px;
+}
+
+.btn:hover {
+  background-color: #4F2512;
+}
+
+.btn:visited {
+  color: #F5ECC3;
+}
+
+.btn:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.btn_small {
+  padding: 3px 6px;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+.btn_large {
+  padding: 12px 24px;
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+/* ---------------------------------------------------------------------
+ Field
+------------------------------------------------------------------------ */
+.field-field {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #904420;
+}
+
+.field-field_large {
+  padding: 15px;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.field-field_solo {
+  display: block;
+}
+
+.field-field + .field-field {
+  margin-left: 10px;
+}
+
+.field-label {
+  display: inline-block;
+  color: #904420;
+}
+
+.field-label_large {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.field-legend {
+  display: block;
+  color: #904420;
+}
+
+.field-legend_large {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.field-info {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+/* ---------------------------------------------------------------------
+ Grid
+------------------------------------------------------------------------ */
+.grid:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.grid-col + .grid-col {
+  margin-top: 20px;
+}
+
+/* ---------------------------------------------------------------------
+ Heading
+------------------------------------------------------------------------ */
+.hdg {
+  line-height: 1;
+}
+
+.hdg_1 {
+  font-size: 28px;
+  font-size: 2.8rem;
+}
+
+.hdg_2 {
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+
+.hdg_3 {
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+.hdg_4 {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+/* ---------------------------------------------------------------------
+ Horizontal List
+------------------------------------------------------------------------ */
+.hList {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.hList > * {
+  float: left;
+}
+
+.hList_tight > * + * {
+  margin-left: 8px;
+}
+
+.hList_std > * + * {
+  margin-left: 16px;
+}
+
+.hList_loose > * + * {
+  margin-left: 24px;
+}
+
+.hList_divided > * + * {
+  margin-left: 12px;
+  padding-left: 12px;
+  border-left: 1px solid;
+}
+
+/* ---------------------------------------------------------------------
+ Site (sticky footer)
+------------------------------------------------------------------------ */
+.site {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.site-bd {
+  display: table-row;
+  height: auto;
+}
+
+.site-ft {
+  display: table-row;
+  height: 1px;
+}
+
+/* ---------------------------------------------------------------------
+ Table
+------------------------------------------------------------------------ */
+.table {
+  width: 100%;
+  max-width: 100%;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 10px;
+  vertical-align: top;
+  border-top: 1px solid #904420;
+}
+
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #904420;
+}
+
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
+.table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+
+.table > tbody + tbody {
+  border-top: 2px solid #904420;
+}
+
+.table_condensed > thead > tr > th,
+.table_condensed > tbody > tr > th,
+.table_condensed > tfoot > tr > th,
+.table_condensed > thead > tr > td,
+.table_condensed > tbody > tr > td,
+.table_condensed > tfoot > tr > td {
+  padding: 5px;
+}
+
+.table_bordered {
+  border: 1px solid #904420;
+}
+
+.table_bordered > thead > tr > th,
+.table_bordered > tbody > tr > th,
+.table_bordered > tfoot > tr > th,
+.table_bordered > thead > tr > td,
+.table_bordered > tbody > tr > td,
+.table_bordered > tfoot > tr > td {
+  border: 1px solid #904420;
+}
+
+.table_bordered > thead > tr > th,
+.table_bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+
+/* ---------------------------------------------------------------------
+ Tier
+------------------------------------------------------------------------ */
+.tier {
+  padding: 10px;
+}
+
+.tier_flush {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* ---------------------------------------------------------------------
+ Vertical Rhythm Styles
+------------------------------------------------------------------------ */
+.vr {
+  margin-bottom: 10px;
+}
+
+.vr_x2 {
+  margin-bottom: 20px;
+}
+
+.vr_x3 {
+  margin-bottom: 30px;
+}
+
+/* ---------------------------------------------------------------------
+ Wrapper
+------------------------------------------------------------------------ */
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 600px) {
+  /* ---------------------------------------------------------------------
+   LANDMARKS
+  ------------------------------------------------------------------------ */
+  /* ---------------------------------------------------------------------
+   Footer
+  ------------------------------------------------------------------------ */
+  .footer {
+    padding: 40px 0;
+  }
+
+  /* ---------------------------------------------------------------------
+   Header
+  ------------------------------------------------------------------------ */
+  .header {
+    padding: 40px 0;
+  }
+
+  /* ---------------------------------------------------------------------
+   MODULES
+  ------------------------------------------------------------------------ */
+  /* ---------------------------------------------------------------------
+   Grid
+  ------------------------------------------------------------------------ */
+  .grid {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .grid-col + .grid-col {
+    margin-top: 0;
+  }
+
+  .grid-col {
+    padding: 0 10px;
+    min-height: 1px;
+    float: left;
+    vertical-align: top;
+  }
+
+  .grid-col_1of6 {
+    width: 16.666666666667%;
+  }
+
+  .grid-col_2of6 {
+    width: 33.333333333333%;
+  }
+
+  .grid-col_3of6 {
+    width: 50%;
+  }
+
+  .grid-col_4of6 {
+    width: 66.666666666667%;
+  }
+
+  .grid-col_5of6 {
+    width: 83.333333333333%;
+  }
+
+  .grid-col_6of6 {
+    width: 100%;
+  }
+
+  /* ---------------------------------------------------------------------
+   Tier
+  ------------------------------------------------------------------------ */
+  .tier {
+    padding: 20px;
+  }
+}
